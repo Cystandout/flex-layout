@@ -1,0 +1,181 @@
+*{
+    margin:  0;
+    padding: 0;
+}
+.container{
+    margin:  0 auto;
+    padding: 0 50px;
+    max-width: 800px;
+    color: white;
+    background:#2B2F3E;
+    border-left:1px solid #ccc ;
+    border-right:1px solid #ccc;
+}
+.box{
+    display: flex;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+}
+.box-item{
+    width: 100px;
+    height:100px;
+    line-height:100px;
+    vertical-align: middle;
+    margin: 5px;
+    background: orange;
+    font-size: 100px;
+    color: white;
+    text-alig: center;
+}
+.fd1{
+    flex-direction:row;
+}
+.fd2{
+    flex-direction:row-reverse;
+}
+.fd3{
+    flex-direction:column;
+}
+.fd4{
+    flex-direction:column-reverse;
+}
+.fw1{
+    flex-wrap: nowrap;
+}
+.fw2{
+    flex-wrap: wrap;
+}
+.fw3{
+    flex-wrap: wrap-reverse;
+}
+.fdfw{
+    flex-flow: column-reverse wrap-reverse;
+}
+.jc1{
+    justify-content: flex-start;
+}
+.jc2{
+    justify-content: flex-end;
+}
+.jc3{
+    justify-content: center;
+}
+.jc4{
+    justify-content: space-between;
+}
+.jc5{
+    justify-content: space-around;
+}
+.ai1{
+    align-items: flex-start
+}
+.ai2{
+    align-items: flex-end
+}
+.ai3{
+    align-items: center
+}
+.ai4{
+    align-items: baseline
+}
+.ai4 .box-item:first-child{
+    line-height:50px;
+}
+.ai5{
+    align-items: stretch;
+}
+.ai5 .box-item{
+    height: auto;
+}
+.item-tall{
+    height:200px;
+    line-height:200px;
+}
+.box-s{
+    max-width: 500px;
+}
+.ac1{
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+.ac2{
+    flex-wrap: wrap;
+    align-content: flex-end;
+}
+.ac3{
+    flex-wrap: wrap;
+    align-content: center;
+}
+.ac4{
+    flex-wrap: wrap;
+    align-content: space-between;
+}
+.ac5{
+    flex-wrap: wrap;
+    align-content: space-around;
+}
+.ac6{
+    align-content: stretch;
+}
+.ac6 .box-item{
+    height: auto;
+}
+.o1 .order{
+    order: -1;
+}
+.box-item div{
+    font-size: 14px;
+    position: relative;
+    top:-60px;
+}
+.fg1 .box-item{
+    flex-grow: 1;
+    width: auto;
+}
+.fg1 .grow-2{
+    flex-grow: 2;
+}
+.fs1 .box-item{
+    width: 400px;
+}
+.fs1 .shrink{
+    flex-shrink: 0;
+}
+.fb1 .box-item{
+    flex-basis: 100px;
+    width: 1000px;
+}
+.flex1 .box-item{
+    flex-grow: 2;
+    flex-shrink: 1;
+    flex-basis: 100px;
+    width: 10000px;
+}
+.as1{
+    height: 200px;
+}
+.as1 .box-item {
+    align-self: flex-start;
+}
+.as1 .end{
+    align-self: flex-end;
+}
+.float-menu{
+    width: 150px;
+    height: 700px;
+    position: fixed;
+    top:0;
+left: 190px;
+}
+.float-menu li{
+    list-style: none;
+    width: 100%;
+    height: 50px;
+    background: #FF404B;
+    border-bottom: 1px solid #ccc;
+}
+.float-menu li a{
+    color: black;
+    text-decoration: none;
+    line-height: 50px;
+}
